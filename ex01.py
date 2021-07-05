@@ -45,3 +45,10 @@ print('To.' + email +'\n '+
         ' 아이디 : '+ userid + '\n'+
         ' 비밀번호 : '+ passwd + '\n'
       )
+
+print(f'To. {email}')
+print(f'▶ 아이디 및 비밀번호 확인')
+print(f'  {name}고객님 안녕하세요.')
+print(f'  {name}고객님의 아이디와 비밀번호는 아래와 같습니다.')
+print(f' 아이디 : {userid}')
+print(f' 비밀번호 : {passwd}')
