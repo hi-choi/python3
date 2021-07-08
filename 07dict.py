@@ -94,42 +94,4 @@ for pair in zip(name, grd):
 
 
 
-# ex) 회원가입
-member = {}
-while(True):
-    option = int(input('1. 회원가입, 2. 프로그램 종료'))
-    if option == 1 :
-        userid = input('아이디를 입력하세요 : ')
-        passwd = input('비밀번호를 입력하세요 : ')
-        member[userid] = passwd
-    else :
-        break
 
-print('-'*30)
-print('아이디 : 비밀번호')
-print('-'*30)
-for key in member:
-    print(f'{key} : {member[key]}')
-print('-'*30)
-
-# ex) 로또
-import random
-comlotto = []
-mylotto = []
-samenumber = []
-print('1부터 45가지의 정수 6개를 입력하세요.')
-for i in range(6):
-    comlotto.append(random.randrange(1,46))
-    mylotto.append(int(input(f'Number{i+1} : ')))
-
-print(f'이번주 로또 번호 {comlotto}')
-print(f'내가 선택한 번호 {mylotto}')
-
-count = 0
-for i in range(len(comlotto)):
-    for j in range(len(mylotto)):
-        if comlotto[i] == mylotto[j] :
-            count+=count
-            samenumber.append(comlotto[i])
-
-print(f'일치하는 숫자 {samenumber}')

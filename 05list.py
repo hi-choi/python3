@@ -194,9 +194,6 @@ alphabet[-7::-1]
 alphabet[-7:-11:-1]
 
 
-# g,h,e,d 추출
-alphabet[:]
-
 
 
 
